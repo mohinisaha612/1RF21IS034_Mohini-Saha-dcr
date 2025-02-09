@@ -1,8 +1,4 @@
-/* 
-    Author: Vijay Thapa;
-    Theme: Restaurant Food Order;
-    version: 1.0;
-*/
+
 
 /* CSS for All */
 *{
@@ -119,7 +115,7 @@ fieldset{
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/plainblu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -266,3 +262,18 @@ fieldset{
         width: 100%;
     }
 }
+.similar-items-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: nowrap; /* Ensure items stay in a single line */
+    overflow-x: auto; /* Enable horizontal scrolling if items exceed container width */
+}
+
+.similar-item {
+    flex: 0 0 auto; /* Ensure each item doesn't grow or shrink */
+    margin-right: 10px; /* Adjust margin between items */
+    width: 300px; /* Adjust width of each item as needed */
+}
+.footer {
+    margin-top: 20px; /* Adjust the margin-top value to move the footer further down */
+}
+

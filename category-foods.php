@@ -63,7 +63,7 @@
                     {
                         $id = $row2['id'];
                         $title = $row2['title'];
-                        $price = $row2['price'];
+                        $price =  $row2['price'];
                         $description = $row2['description'];
                         $image_name = $row2['image_name'];
                         ?>
@@ -89,7 +89,7 @@
 
                             <div class="food-menu-desc">
                                 <h4><?php echo $title; ?></h4>
-                                <p class="food-price">$<?php echo $price; ?></p>
+                                <p class="food-price">₹<?php echo $price; ?></p>
                                 <p class="food-detail">
                                     <?php echo $description; ?>
                                 </p>

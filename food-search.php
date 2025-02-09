@@ -48,7 +48,7 @@
                         //Get the details
                         $id = $row['id'];
                         $title = $row['title'];
-                        $price = $row['price'];
+                        $price = '₹' . $row["price"];
                         $description = $row['description'];
                         $image_name = $row['image_name'];
                         ?>
@@ -76,7 +76,7 @@
 
                             <div class="food-menu-desc">
                                 <h4><?php echo $title; ?></h4>
-                                <p class="food-price">$<?php echo $price; ?></p>
+                                <p class="food-price"><?php echo str_replace('$', '', $price); ?></p>
                                 <p class="food-detail">
                                     <?php echo $description; ?>
                                 </p>

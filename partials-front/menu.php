@@ -10,6 +10,15 @@
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
+
+     <!-- Chatbot Integration Code -->
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "iofAFgTDk3aLq2TFfnO_L",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="iofAFgTDk3aLq2TFfnO_L" domain="www.chatbase.co" defer></script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                    <img src="images\food\logo.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
 
@@ -34,8 +43,20 @@
                         <a href="<?php echo SITEURL; ?>foods.php">Foods</a>
                     </li>
                     <li>
+                    <a href="<?php echo SITEURL; ?>admin\login.php">Admin</a>
+                    </li>
+                    <li>
                         <a href="#">Contact</a>
                     </li>
+                    <li>
+                    <a href="<?php echo SITEURL; ?>most_popular_food_chart.php">Analytics</a>
+                    </li>
+
+
+
+
+                    
+                  
                 </ul>
             </div>
 
